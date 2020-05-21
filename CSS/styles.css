@@ -1,0 +1,14 @@
+
+/*  header*/
+.cabecera.inicio{
+    background-image: url(../imagen/KATYUSCA.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-width: 500px;
+}
+
+.contenedor{
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+

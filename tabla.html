@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TABLAS EN HTML</title>
+    
+<body>
+   <table border="1">
+       <caption><b>EJEMPLO DE TABLA EN HTML</b></caption>
+       <tr>
+           <th>columna 1 cabecera 1</th>
+           <th>columna 2 cabecera 2</th>
+       </tr>
+       <tr>
+           <td>colum. 1 celda 1</td>
+           <td>colum. 2 celda 2</td>
+       </tr>
+   </table>
+   <br>
+   <hr>
+   <br>
+
+   <table border="1">
+       <caption><b>TABLA CON COMBINACION DE COLUMNAS</b></caption>
+       <tr>
+           <th colspan="2">columna 1 cabecera 1</th>
+           <th>col. 2 cabecera 2</th>
+       </tr>
+       <tr>
+            <td>colum. 1 celda 1</td>
+            <td>colum. 2 celda 2</td>
+            <td>colum. 3 celda 3</td>
+        </tr>
+        <tr>
+                <td>colum. 1 celda 4</td>
+                <td colspan="2">colum. 2 celda </td>
+                
+            </tr>
+
+   </table>
+   <br>
+   <hr>
+   <br>
+
+   <table border="1">
+       <caption><b>TABLA CON COMBINACION DE FILAS</b></caption>
+       <tr>
+           <th>cabecera 1</th>
+           <th>cabecera 2</th>
+           <th>cabecera 3</th>
+       </tr>
+       <tr>
+           <td>celda 1</td>
+           <td>celda 2</td>
+           <td>celda 3</td>
+       </tr>
+       <tr>
+            <td rowspan="2">celda 4</td>
+            <td>celda 5</td>
+            <td rowspan="2">celda 6</td>
+        </tr>
+        <tr>
+                <td>celda 7</td>
+            </tr>
+   </table>
+   <!--tarea-->
+   <br>
+   <hr>
+   <br>
+   <style>
+            table {
+                border-collapse: collapse;
+        
+            }
+            table th {
+                background-color:lightsalmon
+            }
+    </style>
+</head>
+
+   <table border="1" style="width:100%; ">
+       <caption> RESULTADO POR SEMESTRE</caption>
+       <colgroup>
+        <col style="width: 10%"/>
+        <col span="3" style="width: 30%; background: yellow"/>
+       </colgroup>
+       <thead style="background-color:yellowgreen">
+			<tr>
+				<th rowspan="2">DICIPLINA</th>
+				<th colspan="3">SEMESTRE</th>
+			</tr>
+			<tr>
+				<th>PRIMER SEMESTRE</th>
+                <th>SEGUNDO SEMESTRE</th>
+                <th>QUINTO SEMESTRE</th>
+			</tr>
+       </thead>
+       <tfoot style="background-color: rgb(10, 143, 177);">
+        <tr>
+            <td colspan="4" align="center"><b> SEMESTRE GANADOR:</b> QUINTO SEMESTRE</td>
+        </tr>
+        </tfoot>
+       
+       <tbody>
+            <tr>
+                <th>FUTBOL</th>
+                <td>TERCER LUGAR</td>
+                <td>SEGUNDO LUGAR</td>
+                <td>PRIMER LUGAR</td>
+            </tr>
+            <tr>
+                <th>VOLEY</th>
+                <td>PRIMER LUGAR</td>
+                <td>SEGUNDO LUGAR</td>
+                <td>TERCER LUGAR</td>
+            </tr>
+            <tr>
+                <th>AJEDREZ</th>
+                <td>PRIMER LUGAR</td>
+                <td>SEGUNDO LUGAR</td>
+                <td>TERCER LUGAR</td>
+            </tr>
+            <tr>
+                    <th>NATACIÓN</th>
+                    <td>PRIMER LUGAR</td>
+                    <td>SEGUNDO LUGAR</td>
+                    <td>TERCER LUGAR</td>
+                    </tr>
+        </tbody>
+   </table>
+
+</head>
+</html>
